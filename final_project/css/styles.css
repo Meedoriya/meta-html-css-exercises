@@ -50,6 +50,62 @@ body {
     padding: 2em 5%;
     text-align: center;
   }
+
+  #staff {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; /* Use the appropriate background color */
+    padding: 50px; /* This can be adjusted based on your layout */
+  }
+  
+  .staff-content {
+    flex: 1;
+    max-width: 50%; /* Adjust the width as needed */
+    margin-right: 2%; /* Spacing between text and image */
+  }
+  
+  .staff-content h2 {
+    font-size: 3em; /* Larger font size for the heading */
+    color: #333; /* Dark color for the text */
+    margin-bottom: 0.5em;
+  }
+  
+  .staff-content p {
+    font-size: 1.2em; /* Readable font size for the paragraph */
+    color: #666; /* Slightly lighter color for the paragraph text */
+    line-height: 1.6;
+  }
+  
+  .staff-image {
+    flex: 1;
+    max-width: 48%; /* Adjust the width as needed */
+    text-align: center; /* Center the image within the div if needed */
+  }
+  
+  .staff-image img {
+    width: 100%; /* Ensures the image is responsive */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    #staff {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .staff-content, .staff-image {
+      max-width: 100%;
+      margin-right: 0; /* Remove the margin on mobile */
+    }
+  
+    .staff-image img {
+      margin-top: 20px; /* Space between text and image on mobile */
+    }
+  }
+  
   
   /* Image Styles */
   img {
@@ -64,6 +120,103 @@ body {
     transform: scale(1.03); /* Gentle scale on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   }
+
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em;
+    background: #fff; /* Or any color that fits the design scheme */
+  }
+  
+  .about-content {
+    flex: 1;
+    padding-right: 2em; /* Add some spacing between text and image */
+  }
+  
+  .about-content h2 {
+    font-size: 2em; /* Adjust the size as needed */
+    color: #333;
+    margin-bottom: 0.5em;
+  }
+  
+  .about-content p {
+    font-size: 1.1em; /* Adjust the size as needed */
+    line-height: 1.6;
+    color: #666; /* Slightly lighter for body text */
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* or your preferred maximum width */
+    margin: auto; /* Centers the container */
+    padding: 3em 0; /* Vertical padding */
+  }
+  
+  .about-text {
+    flex: 2; /* Gives the text container more room, adjust as necessary */
+    padding-right: 2em; /* Adds some spacing between the text and the image */
+  }
+  
+  .about-image {
+    flex: 1; /* Allocates space to the image, adjust as necessary */
+    display: flex;
+    justify-content: flex-end; /* Aligns the image to the right */
+  }
+  
+  .about-image img {
+    max-width: 90%; /* Increases the size of the image */
+    max-height: 350px; /* Adjust the maximum height as necessary */
+    object-fit: contain; /* Ensures the entire image fits within the given dimensions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusts the shadow for depth */
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      padding: 2em; /* Reduced padding on smaller screens */
+    }
+  
+    .about-text, .about-image {
+      order: 2; /* Both text and image are ordered equally for stacking */
+      flex-basis: 100%; /* Allows each to take full width of the container */
+      padding-right: 0; /* Resets padding */
+    }
+  
+    .about-image {
+      order: 1; /* Image goes above the text on smaller screens */
+      justify-content: center; /* Centers the image */
+    }
+  
+    .about-image img {
+      max-width: 100%; /* Image takes the full width on smaller screens */
+      max-height: none; /* Resets the max-height for a full portrait on mobile */
+    }
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    #about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-content {
+      padding-right: 0; /* Reset padding for mobile view */
+    }
+  
+    .about-image {
+      margin-top: 1em;
+    }
+  
+    .about-image img {
+      max-width: 80%; /* Slightly smaller images on mobile for aesthetics */
+    }
+  }
+  
   
   /* Testimonial Styles */
   #testimonials {
@@ -154,4 +307,70 @@ body {
   section {
     animation: fadeIn 1s ease-out;
   }
-  
+
+
+/* Keyframes for sliding animations */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-50%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Run the slide animation */
+.slides {
+  animation: slide 10s infinite;
+}
+
+#services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em 0;
+  padding: 2em;
+  background: #fff; /* Adjust if you have a specific background color or image */
+}
+
+.services-content {
+  flex-basis: 40%; /* Adjust the width as necessary */
+  padding-right: 2em; /* Add some spacing between text and images */
+}
+
+.services-content h2 {
+  font-size: 2.5em; /* Larger font size for heading */
+  margin-bottom: 0.5em;
+  color: #333; /* Darker color for contrast */
+}
+
+.services-content p {
+  font-size: 1.2em; /* Increased font size for readability */
+  line-height: 1.6; /* More line spacing for better readability */
+}
+
+.services-images {
+  flex-basis: 60%; /* Adjust the width as necessary */
+  display: flex;
+  justify-content: space-around; /* This will space out the images evenly */
+}
+
+.services-images img {
+  width: 48%; /* Adjust image width as needed, giving some space between them */
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds depth with a shadow */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {       
+  #services {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .services-content, .services-images {
+    flex-basis: 100%;
+  }
+
+  .services-images img {
+    width: 100%; /* Full width on smaller screens */
+    margin-top: 1em; /* Adds space between the images when stacked */
+  }
+}

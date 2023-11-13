@@ -31,73 +31,90 @@
   </nav>
 </header>
 
-</div>
-</section>
-
-<!-- Add a Testimonials section -->
-<section id="testimonials">
-  <h2>Client Testimonials</h2>
-  <div class="testimonial">
-    <p>"I've never felt more confident in my hair. The staff at Hair Day Salon truly know how to bring out the best in you!" - Alex T.</p>
-  </div>
-  <!-- More testimonials can be added here -->
-</section>
-
-<section id="services">
-  <h2>Our Services</h2>
-  <p>Specializing in cut, color, and styling, Hair Day offers an array of beauty services including makeup and nail care. Book your coloring appointment well in advance and stay inspired with our online tutorials.</p>
-  <img src="images/Artboard 19.png" alt="Salon Interior">
-</section>
-
-<section id="about">
-  <h2>About the Owner</h2>
-  <p>Pria, a certified colorist, and her business partner, Garry, have created a 'treat yourself' atmosphere within Hair Day, focusing on edgy and custom coloring techniques.</p>
-  <img src="images/Artboard 23.png" alt="Owner Pria">
-</section>
-
-<section id="staff">
-  <h2>Meet Our Staff</h2>
-  <p>Our talented team consists of two stylists, three colorists, one manicurist, and one makeup artist, all dedicated to providing you with the best experience.</p>
-  <img src="images/Artboard 22.png" alt="Staff Group Photo">
-</section>
-
-<!-- Add a Booking section with a simple form -->
-<section id="booking">
-    <h2>Book an Appointment</h2>
-    <form action="booking_form_processing.php" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="service">Service:</label>
-      <select id="service" name="service">
-        <option value="cut">Haircut</option>
-        <option value="color">Color</option>
-        <option value="styling">Styling</option>
-        <!-- Additional services can be added here -->
-      </select>
-      
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="date" required>
-      
-      <input type="submit" value="Book Now">
-    </form>
+<main>
+  <!-- Add a Testimonials section -->
+  <section id="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <p>"I've never felt more confident in my hair. The staff at Hair Day Salon truly know how to bring out the best in you!" - Alex T.</p>
+    </div>
+    <!-- More testimonials can be added here -->
+  </section>
+  
+  <section id="services">
+    <div class="services-content">
+      <h2>Our Services</h2>
+      <p>Specializing in cut, color, and styling, Hair Day offers an array of beauty services including makeup and nail care. Book your coloring appointment well in advance and stay inspired with our online tutorials.</p>
+    </div>
+    <div class="services-images">
+      <img src="images/DALL·E 2023-11-13 12.18.30 - A modern and elegant hair salon interior, showcasing a stylish and welcoming ambiance. The scene includes high-end hairstyling chairs, large mirrors, .png" alt="Salon Interior 1">
+      <img src="images/DALL·E 2023-11-13 12.18.48 - A modern and elegant hair salon interior, showcasing a stylish and welcoming ambiance. The scene includes high-end hairstyling chairs, large mirrors, .png" alt="Salon Interior 2">
+    </div>
   </section>
 
-<!-- Add a Contact section -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions or want to get in touch? Send us a message or find us at:</p>
-    <address>
-      123 Fashion St., Madison, WI<br>
-      Email: info@hairdaysalon.com<br>
-      Phone: (555) 123-4567
-    </address>
+
+  <section id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About the Owner</h2>
+        <p>Pria, a certified colorist, and her business partner, Garry, have created a 'treat yourself' atmosphere within Hair Day, focusing on edgy and custom coloring techniques.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/DALL·E 2023-11-13 12.31.18 - A professional portrait of a female salon owner, Pria, in her mid-30s, with a creative and confident demeanor. She has a stylish, edgy haircut and is .png" alt="Owner Pria">
+      </div>
+    </div>
   </section>
+
+  <section id="staff">
+    <div class="staff-content">
+      <h2>Meet Our Staff</h2>
+      <p>Our talented team consists of two stylists, three colorists, one manicurist, and one makeup artist, all dedicated to providing you with the best experience.</p>
+    </div>
+    <div class="staff-image">
+      <img src="images/DALL·E 2023-11-13 13.17.53 - A diverse and professional group photo of salon staff, consisting of two hairstylists, three colorists, one manicurist, and one makeup artist. The tea.png" alt="Staff Group Photo">
+    </div>
+  </section>
+
+
+  <section id="booking">
+    <div class="booking-content">
+      <h2>Book an Appointment</h2>
+      <form action="booking_form_processing.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="service">Service:</label>
+        <select id="service" name="service">
+          <option value="cut">Haircut</option>
+          <option value="color">Color</option>
+          <option value="styling">Styling</option>
+        </select>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <input type="submit" value="Book Now">
+      </form>
+    </div>
+  </section>
+</main>
 
 <footer>
+  <div>
+      <!-- Add a Contact section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to get in touch? Send us a message or find us at:</p>
+      <address>
+        123 Fashion St., Madison, WI<br>
+        Email: info@hairdaysalon.com<br>
+        Phone: (555) 123-4567
+      </address>
+    </section>
+  </div>
   <p>&copy; 2023 Hair Day Salon. All rights reserved.</p>
 </footer>
 </body>
